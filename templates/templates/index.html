@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Novels</title>
+</head>
+<body>
+<h1>小説一覧</h1>
+<a href="/write">新しい小説を書く</a>
+<ul>
+    {% for novel in novels %}
+    <li><strong>{{ novel.title }}</strong><br>{{ novel.content }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
